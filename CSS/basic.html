@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         /* @import url('style.css'); */
         h2 {
             color: #a5cb62;
         }
+
+        .abc {
+            color: pink!important;
+        }
+        .asdf {
+            color: orange!;
+        }
+        #xyz {
+            color:blueviolet;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -19,15 +35,31 @@
         1. 嵌入式樣式
         2. 內部樣式
         3. 外部樣式
+
+        基本選取器
+        1. tag 標籤選取器
+        2. class 類別選取器（可重複）
+        3. id選取器（不可重複）
+
+        影響css套用的狀況
+        1. 權重
+        2. 順序
+        3. css本身的特性
+
+        權重（specific）
+        影響的元素愈少，權重愈重，愈優先套用。
+        !important > 嵌入式 > id > class > tag
+
+        當權重相同的情況下，則以順序為主，愈後寫愈優先
     -->
     <!-- 嵌入式 -->
-    <h1 style="color: red;">hello css</h1>
+    <h1 style="color: red;" class="abc" id="xyz">hello css</h1>
     <h2>內部樣式</h2>
-    <p>
+    <p class="abc asdf">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto magni minus eius explicabo itaque similique impedit ratione. Expedita laudantium at provident, minus similique dicta! Est nam aspernatur sint tempore magnam?
     </p>
     <h2>內部樣式</h2>
-    <p>
+    <p class="abc">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto magni minus eius explicabo itaque similique impedit ratione. Expedita laudantium at provident, minus similique dicta! Est nam aspernatur sint tempore magnam?
     </p>
     <h2>內部樣式</h2>
