@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: #ccc;
+            width: 200px;
+            /* min-width: 200px; */
+            /* max-width: 800px; */
+            /* height: 200px; */
+            min-height: 200px;
+            /* max-height: 500px; */
+
+            /* overflow: auto; */
+            /* visible, hidden, scroll, auto, clip */
+
+            /* overflow-x: hidden; */
+            /* overflow-y: scroll; */
+            
+            text-align: justify;
+
+            /* padding 內距 */
+            /* padding: 30px; */
+
+            /* padding-left: ; */
+            /* padding-right: ; */
+            /* padding-top: ; */
+            /* padding-bottom: ; */
+
+            /* padding-inline:; */
+            /* padding-inline-start:; */
+            /* padding-inline-end:; */
+            /* padding-block:; */
+            /* padding-block-start:; */
+            /* padding-block-end:; */
+
+            /* margin 外距 */
+            /* 
+                注意：在預設狀態下，上下margin會重疊
+            */
+            /* margin:30px; */
+
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            /* margin-top: ; */
+            /* margin-bottom: ; */
+
+            /* margin-inline:; */
+            /* margin-inline-start:; */
+            /* margin-inline-end:; */
+            /* margin-block:; */
+            /* margin-block-start:; */
+            /* margin-block-end:; */
+
+            /* margin: 40px; */
+            /* 上下左右 */
+
+            /* margin: 40px 0; */
+            /* 上下 左右 */
+
+            /* margin: 40px 0 50px; */
+            /* 上 左右 下 */
+
+            /* margin: 40px 0 50px 100px; */
+            /* 上 右 下 左 */
+
+
+            /* border 邊框 */
+            border: 5px solid red;
+            /* border-color: #ffd781; */
+            /* border-width: 10px; */
+            /* border-style: ridge; */
+            /* solid, dotted, dashed, double, inset, outset, groove, ridge */
+
+            /* border-left: 1px solid red; */
+            /* border-right: 1px solid red; */
+            /* border-top: 1px solid red; */
+            /* border-bottom: 1px solid red; */
+
+            /* border-top-color: ; */
+            /* border-top-style: ; */
+            /* border-top-width: ; */
+            /* border-bottom-color: ; */
+            /* border-bottom-style: ; */
+            /* border-bottom-width: ; */
+            /* border-left-color: ; */
+            /* border-left-style: ; */
+            /* border-left-width: ; */
+            /* border-right-color: ; */
+            /* border-right-style: ; */
+            /* border-right-width: ; */
+        }
+        span.box {
+            background-color: #ed00ae;
+        }
+        /* 
+            block vs inline
+            inline沒有width與height
+            inline的padding上下可見，但不影響空間；左右正常
+            inline的margina沒有上下，只有左右
+
+            inline沒有width,height,上下padding,上下margin
+            inline只有左右padding,左右margin
+        */
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quia! 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, labore! Facilis, numquam dolor? Inventore vitae quod aliquid cupiditate, saepe ad velit a totam enim consectetur corrupti quasi, fugiat, alias mollitia.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, labore! Facilis, numquam dolor? Inventore vitae quod aliquid cupiditate, saepe ad velit a totam enim consectetur corrupti quasi, fugiat, alias mollitia.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quia! 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, labore! Facilis, numquam dolor? Inventore vitae quod aliquid cupiditate, saepe ad velit a totam enim consectetur corrupti quasi, fugiat, alias mollitia.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, labore! Facilis, numquam dolor? Inventore vitae quod aliquid cupiditate, saepe ad velit a totam enim consectetur corrupti quasi, fugiat, alias mollitia.
+    </div>
+    <span class="box">
+        inline
+    </span>
+    <span class="box">inline</span>
+    <span class="box">
+        inline
+    </span>
+    <span class="box">inline</span>
+    <span class="box">inline</span>
+    <span class="box">inline</span>
+</body>
+</html>
