@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            min-height: 600px;
+            display: flex;
+            background-color: #f0adad;
+
+            flex-direction: row;
+
+            justify-content: center;
+            /* 
+                start, center, end
+                space-between, space-around, space-evenly
+            */
+
+            align-items: center;
+            /* 
+                start, center, end
+                stretch, baseline
+            */
+        }
+        .box {
+            width: 250px;
+        }
+        .box:nth-of-type(odd){
+            background-color: #9DDE8B;
+        }
+        .box:nth-of-type(even){
+            background-color: #40A578;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 >title1</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae autem magnam consectetur eligendi non sunt, voluptatem delectus cumque. Quasi dolorum soluta tempore sed ullam, odio est? Quibusdam, temporibus perspiciatis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae autem magnam consectetur eligendi non sunt, voluptatem delectus cumque. Quasi dolorum soluta tempore sed ullam, odio est? Quibusdam, temporibus perspiciatis.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title2</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae autem magnam consectetur eligendi non sunt, voluptatem delectus cumque. Quasi dolorum soluta tempore sed ullam, odio est? Quibusdam, temporibus perspiciatis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae autem magnam consectetur eligendi non sunt, voluptatem delectus cumque. Quasi dolorum soluta tempore sed ullam, odio est? Quibusdam, temporibus perspiciatis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae autem magnam consectetur eligendi non sunt, voluptatem delectus cumque. Quasi dolorum soluta tempore sed ullam, odio est? Quibusdam, temporibus perspiciatis.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title3</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae autem magnam consectetur eligendi non sunt, voluptatem delectus cumque. Quasi dolorum soluta tempore sed ullam, odio est? Quibusdam, temporibus perspiciatis.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title3</h2>
+            <p>
+                Lorem,ng elit. Quaeratnatem delectus cumque. Quasi dolorum soluta tempore sed ullam, odio est? Quibusdam, temporibus perspiciatis.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

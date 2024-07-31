@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 0;
+        }
+        .box {
+            background-color: #ccc;
+            display: inline-block;
+            width: 200px;
+            font-size: 16px;
+        }
+        .inline {
+            font-size: 16px;
+            background: greenyellow;
+        }
+
+        .btn {
+            padding: 8px 30px;
+            font-size: 14px;
+            background-color: #fa0;
+            text-decoration: none;
+            display: inline-block;
+        }
+        /* 
+            inline與inline-block的空隙問題
+
+            1. 將父層元素的font-size設定為0
+            2. 自己的font-size還原
+        */
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nobis nostrum temporibus, saepe animi ad delectus ullam non illum voluptatum vero. Nesciunt id cum, odio quasi sit ipsum a ab.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nobis nostrum temporibus, saepe animi ad delectus ullam non illum voluptatum vero. Nesciunt id cum, odio quasi sit ipsum a ab.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nobis nostrum temporibus, saepe animi ad delectus ullam non illum voluptatum vero. Nesciunt id cum, odio quasi sit ipsum a ab.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nobis nostrum temporibus, saepe animi ad delectus ullam non illum voluptatum vero. Nesciunt id cum, odio quasi sit ipsum a ab.
+    </div>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <a href="#" class="btn">Link</a>
+</body>
+</html>
