@@ -2,12 +2,26 @@
 nav {
     background-color: var(--clr-dark);
     display: flex;
+    /* height: 100px; */
+    /* align-items: center; */
+    /* gap:15px; */
+    /* padding-inline: 15px; */
+    gap:var(--spacing);
+    padding-inline: var(--spacing);
 }
 .nav-link,.nav-logo {
     color: var(--clr-light);
     text-decoration: none;
+
+    display: inline-block;
+    padding-block: 35px;
 }
 .nav-menu:last-of-type {
     margin-left: auto;
+}
+.nav-menu {
+    display: flex;
+    /* gap: 15px; */
+    gap:var(--spacing);
 }
 /* Nav--end */

@@ -15,4 +15,6 @@
 
     --clr-primary: var(--clr-blue-300);
     --clr-secondary: var(--clr-red-300);
+
+    --spacing: 15px;
 }
