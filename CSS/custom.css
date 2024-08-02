@@ -1,0 +1,4 @@
+body {
+    background-color:var(--clr-secondary);
+    font-family: var(--ff-sans);
+}
