@@ -1,4 +1,13 @@
-body {
-    background-color:var(--clr-secondary);
-    font-family: var(--ff-sans);
+/* Nav--start */
+nav {
+    background-color: var(--clr-dark);
+    display: flex;
 }
+.nav-link,.nav-logo {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+.nav-menu:last-of-type {
+    margin-left: auto;
+}
+/* Nav--end */
