@@ -79,3 +79,20 @@ header h1 {
     font-size: 5rem;
 }
 /* Header--end */
+/* About--start */
+#about {
+    padding-block: 100px;
+    /* background-color: #fff0bb; */
+    background-image: linear-gradient(to right bottom,#fff0bb,#ffe999);
+}
+#about h2 {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 1px solid hsl(47, 100%, 50%);
+}
+#about h3 {
+    font-size: 2rem;
+    color: var(--clr-dark);
+    margin-bottom: var(--spacing);
+}
+/* About--end */
