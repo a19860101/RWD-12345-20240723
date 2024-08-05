@@ -95,4 +95,7 @@ header h1 {
     color: var(--clr-dark);
     margin-bottom: var(--spacing);
 }
+#about i {
+    color: var(--clr-blue-500);
+}
 /* About--end */
