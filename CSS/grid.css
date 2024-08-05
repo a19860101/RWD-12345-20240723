@@ -23,3 +23,6 @@
 [class^="col"]{
     padding: var(--spacing);
 }
+.padding-0 {
+    padding: 0!important;
+}

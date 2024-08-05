@@ -98,4 +98,7 @@ header h1 {
 #about i {
     color: var(--clr-blue-500);
 }
+#about .row .row {
+    align-items: center;
+}
 /* About--end */
