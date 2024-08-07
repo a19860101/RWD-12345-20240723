@@ -152,7 +152,13 @@ header h1 {
 
 /* css nested  巢狀css*/
 #folio {
+    background-image: linear-gradient(to right bottom,#fff0bb,#ffe999);
     padding-block: 100px;
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        /* border-bottom: 1px solid hsl(47, 100%, 50%); */
+    }
     figure {
         position: relative;
         figcaption {
@@ -181,3 +187,13 @@ header h1 {
     }
 }
 /* Folio--end */
+/* Footer--start */
+footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+    padding-block:30px;
+    font-size: 14px;
+    font-weight: 300;
+}
+/* Footer--end */
