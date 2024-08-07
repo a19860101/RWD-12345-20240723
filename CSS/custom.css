@@ -103,6 +103,16 @@ header h1 {
 }
 /* About--end */
 /* Service--start */
+#service {
+    padding-block: 100px;
+    background-image: linear-gradient(to right bottom,#fff7db,#fff3c8);
+
+}
+#service h2 {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 1px solid hsl(47, 100%, 50%);
+}
 #service .row {
     align-items: center;
 }
@@ -117,6 +127,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: var(--spacing);
+    align-items: start;
 }
 #service .container:last-of-type .col-6:first-of-type{
     order:2;

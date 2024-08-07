@@ -15,3 +15,20 @@ img {
     height: 100%;
     object-fit:cover;
 }
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr--dark);
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+.btn-amber {
+    background-color: var(--clr-amber-400);;
+}
+.btn-red {
+    background-color: var(--clr-red-400);;
+}
+.btn-blue {
+    background-color: var(--clr-blue-400);;
+}
