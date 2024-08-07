@@ -108,6 +108,9 @@ header h1 {
     background-image: linear-gradient(to right bottom,#fff7db,#fff3c8);
 
 }
+#service img {
+    border-radius: 12px 128px;
+}
 #service h2 {
     font-size: 3rem;
     text-align: center;
@@ -136,9 +139,11 @@ header h1 {
     order:1;
 }
 #service .container:first-of-type .service-content {
-    background-color: var(--clr-amber-300);
+    /* background-color: var(--clr-amber-300); */
+    background-color: Hsla(47, 100%, 70% , 50%);
+    backdrop-filter: blur(8px);
     position: relative;
-    left: -100px;
+    left: -160px;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 6px 6px 12px 0px rgba(110, 77, 1, 0.2);
