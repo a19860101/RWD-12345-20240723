@@ -118,4 +118,12 @@ header h1 {
     flex-direction: column;
     gap: var(--spacing);
 }
+#service .container:last-of-type .col-6:first-of-type{
+    order:2;
+}
+#service .container:last-of-type .col-6:last-of-type{
+    order:1;
+}
+/* #service .col-6:nth-of-type(3){order:4;} */
+/* #service .col-6:nth-of-type(4){order:3;} */
 /* Service--end */
