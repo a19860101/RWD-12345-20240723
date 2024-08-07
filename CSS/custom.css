@@ -1,6 +1,8 @@
 /* Nav--start */
 nav {
-    background-color: var(--clr-dark);
+    /* background-color: var(--clr-dark); */
+    background-color: rgba(22, 22, 22, 0.88);
+    backdrop-filter: blur(5px);
     display: flex;
     /* height: 100px; */
     /* align-items: center; */
@@ -8,6 +10,10 @@ nav {
     /* padding-inline: 15px; */
     gap:var(--spacing);
     padding-inline: var(--spacing);
+
+    position: fixed;
+    width: 100%; 
+    z-index: 9999;
 }
 .nav-link,.nav-logo {
     color: var(--clr-light);
