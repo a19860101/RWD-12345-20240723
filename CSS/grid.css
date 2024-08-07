@@ -26,3 +26,7 @@
 .padding-0 {
     padding: 0!important;
 }
+/* 子代選取器 */
+.no-padding > [class^="col"] {
+    padding: 0;
+}
