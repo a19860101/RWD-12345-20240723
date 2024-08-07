@@ -108,9 +108,14 @@ header h1 {
 }
 #service h3 {
     font-size: 2rem;
-    margin-bottom: var(--spacing);
+    /* margin-bottom: var(--spacing); */
 }
 #service p {
-    margin-bottom: var(--spacing);
+    /* margin-bottom: var(--spacing); */
+}
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
 }
 /* Service--end */
