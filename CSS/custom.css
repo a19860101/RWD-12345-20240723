@@ -102,3 +102,15 @@ header h1 {
     align-items: center;
 }
 /* About--end */
+/* Service--start */
+#service .row {
+    align-items: center;
+}
+#service h3 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing);
+}
+#service p {
+    margin-bottom: var(--spacing);
+}
+/* Service--end */
