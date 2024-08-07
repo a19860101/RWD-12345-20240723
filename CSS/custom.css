@@ -12,6 +12,8 @@ nav {
     padding-inline: var(--spacing);
 
     position: fixed;
+    /* position: sticky; */
+    top: 0;
     width: 100%; 
     z-index: 9999;
 }
@@ -21,6 +23,12 @@ nav {
 
     display: inline-block;
     padding-block: 35px;
+}
+.nav-link {
+    transition:.3s;
+}
+.nav-link:hover {
+    color: var(--clr-amber-400);
 }
 .nav-menu:last-of-type {
     margin-left: auto;
