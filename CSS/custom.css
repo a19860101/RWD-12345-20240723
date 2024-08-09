@@ -98,7 +98,14 @@ header h1 {
     padding-block: 100px;
     /* background-color: #fff0bb; */
     background-image: linear-gradient(to right bottom,#fff0bb,#ffe999);
+
+    /* text-align: left; */
 }
+/* @media(min-width:768px){
+    #about {
+        text-align: center;
+    }
+} */
 #about h2 {
     font-size: 3rem;
     text-align: center;
