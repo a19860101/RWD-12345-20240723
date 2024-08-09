@@ -1,5 +1,6 @@
 /* Nav--start */
-nav {
+/* 桌機版選單 */
+.desktop-nav {
     /* background-color: var(--clr-dark); */
     background-color: rgba(22, 22, 22, 0.88);
     backdrop-filter: blur(5px);
@@ -17,26 +18,66 @@ nav {
     width: 100%; 
     z-index: 9999;
 }
-.nav-link,.nav-logo {
+.desktop-nav .nav-link,.desktop-nav .nav-logo {
     color: var(--clr-light);
     text-decoration: none;
 
     display: inline-block;
     padding-block: 35px;
 }
-.nav-link {
+.desktop-nav .nav-link {
     transition:.3s;
 }
-.nav-link:hover {
+.desktop-nav .nav-link:hover {
     color: var(--clr-amber-400);
 }
-.nav-menu:last-of-type {
+.desktop-nav .nav-menu:last-of-type {
     margin-left: auto;
 }
-.nav-menu {
+.desktop-nav .nav-menu {
     display: flex;
     /* gap: 15px; */
     gap:var(--spacing);
+}
+/* 手機版選單 */
+.mobile-nav {
+    background-color: rgba(22, 22, 22, 0.88);
+    backdrop-filter: blur(5px);
+    display: flex;
+    gap:var(--spacing);
+    padding-inline: var(--spacing);
+
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 9999;
+
+    justify-content: space-between;
+
+    .nav-logo {
+        padding-block: 20px  ;
+        text-decoration: none;
+        color: var(--clr-light);
+    }
+    .nav-toggle {
+        padding-block: 20px  ;
+        text-decoration: none;
+        color: var(--clr-light);
+    }
+}
+.mobile-nav {
+    display: flex;
+}
+.desktop-nav {
+    display: none;
+}
+@media(min-width:600px){
+    .mobile-nav {
+        display: none;
+    }
+    .desktop-nav {
+        display: flex;
+    }
 }
 /* Nav--end */
 /* Header--start */
