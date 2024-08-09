@@ -56,7 +56,7 @@ header {
     /* padding-block: 300px; */
     /* padding-bottom: 33%; */
     aspect-ratio: 16 / 9;
-    /* min-height: 400px; */
+    min-height: 400px;
     max-height: 700px;
     /* background-color: #098; */
     /* background-image: url('https://picsum.photos/id/87/1600/1000'); */
@@ -79,18 +79,18 @@ header {
     background-color:rgb(255 255 255 / .2);
     backdrop-filter: blur(5px);
     /* filter: blur(5px); */
-    width: 400px;
+    width: min(400px, 90%);
     height: fit-content;
     position: absolute;
     inset:0;
     margin:auto;
     text-align: center;
-    padding: 30px;
+    padding: min(30px,6vw);
     color: var(--clr-light);
     border-radius: 15px;
 }
 header h1 {
-    font-size: 5rem;
+    font-size: clamp(3rem, 6vw, 5rem);
 }
 /* Header--end */
 /* About--start */
