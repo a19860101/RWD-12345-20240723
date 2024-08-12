@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x  = 10;
+        
+        // if...
+
+        if(x > 0){
+            console.log('成立');
+        }
+
+        // console.log(x > 0 ? '成立':'');
+
+        // if...else
+
+        if(x > 0){
+            console.log('成立');
+        }else{
+            console.log('不成立')
+        }
+
+        // if...else if, if...else if...else
+        if(x > 0){
+            console.log('正');
+        }else if(x < 0){
+            console.log('負')
+        }else{
+            console.log('error')
+        }
+
+        // if(){
+
+        // }else if(){
+
+        // }else if(){
+
+        // }else if(){
+
+        // }else{
+
+        // }
+
+        // switch
+        let y = 0;
+        switch(y){
+            case 0:
+                console.log(0);
+                break;
+            case 10:
+                console.log(10);
+                break;
+            case 100:
+                console.log(100);
+                break;
+            default:
+                console.log('ERROR');
+        }
+
+        let lang = '';
+        switch(lang){
+            case 'zh':
+                console.log('中文');
+                break;
+            case 'en':
+                console.log('英文');
+                break;
+            case 'jp':
+                console.log('日文');
+                break;
+            default:
+                console.log('請設定語系');
+        }
+
+        switch(true){
+            case y > 0:
+                console.log('正');
+                break;
+            case y < 0:
+                console.log('負');
+                break;
+            default:
+                console.log(0);
+        }
+    </script>
+</body>
+</html>

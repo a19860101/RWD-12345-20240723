@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 運算子
+        let x = 11;
+        let y = 3;
+        
+        // 算術運算子/數學運算子
+        console.log(x + y);
+        console.log(x - y);
+        console.log(x * y);
+        console.log(x / y);
+        console.log(x % y);
+
+        // 比較運算子
+        console.log(x > y);
+        console.log(x < y);
+        console.log(x >= y);
+        console.log(x <= y);
+        console.log(x == y);
+        console.log(x === y);
+
+        let i = 10;
+        let j = '10';
+        console.log(i == j); // 值相等即可
+        console.log(i === j); // 值與資料型別皆需相等
+
+        console.log(x != y);
+        console.log(x !== y);
+
+        // 指定運算子
+        console.log(x = y); // 3
+        console.log(x += y); // x = x + y 6
+        console.log(x -= y); // x = x - y 3
+        console.log(x *= y); // x = x * y 9
+        console.log(x /= y); // x = x / y 3
+        console.log(x %= y); // x = x % y 0
+
+        // 邏輯運算子
+        // AND
+        console.log(x && y);
+        // OR
+        console.log(x || y);
+
+        // NOT
+        console.log(!x);
+
+        let c1 = undefined;
+        let c2;
+        let c3 = null;
+        let c4 = '';
+        let c5 = 0;
+        let c6 = false;
+        console.log('--------------------')
+        console.log(!c1);
+        console.log(!c2);
+        console.log(!c3);
+        console.log(!c4);
+        console.log(!c5);
+        console.log(!c6);
+
+        // 三元運算子
+        let qqq = x > 0 ? '大' : '小';
+        // 條件 ? 成立 : 不成立
+        console.log(qqq);
+    </script>
+</body>
+</html>
