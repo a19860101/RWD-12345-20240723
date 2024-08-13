@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var vs let,const        
+        // var x = 100;
+        // var x = 999;
+
+        // let y = 100;
+        // let y = 888;
+
+        // const z = 'asdf';
+        // const z = 'zxcv';
+
+        // 
+        /* 
+            var可以重複宣告，let,const不可重複宣告
+            var是function scope；let,const則為block scope
+        */
+
+        // var x = 100;
+        // function test(){
+        //     var x = 999;
+        //     var z = 123;
+        //     console.log(x);
+        // }
+        // test()
+
+        // let q = 999;
+        // if(q > 0){
+        //     let q = 123;
+        //     console.log(q);
+        // }
+        // console.log(q);
+
+        // let vs const
+        let x = 100;
+        x = x + 5;
+        console.log(x);
+
+        // const不可重新賦值
+        // const y = 100;
+        // y = y + 5;
+        // console.log(y)
+
+        const arrr = ['apple','banana'];
+        arrr.push('cat');
+        
+        const obj = {
+            name: 'test'
+        }
+        obj.birth = '2024/12/12';
+
+        obj = {name:'hello'}
+        console.log(obj);
+    </script>
+</body>
+</html>

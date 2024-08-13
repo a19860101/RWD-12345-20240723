@@ -63,7 +63,46 @@
         let drink_delete = drinks.filter(function(data){
             return data.name !== '極濃鍋煮';
         })
-        console.log(drink_delete);
+
+        // find 回傳符合條件的第一筆資料
+        let find_drink = drinks.find(function(data){
+            // return data.name == '十盛蕎麥';
+            // return data.name.indexOf('奶霜') > -1;
+            return data.price < 50;
+        })
+        // findIndex 回傳符合條件的第一筆資料索引值
+        let find_drink_idx = drinks.findIndex(function(data){
+            // return data.name == '十盛蕎麥';
+            return data.name.indexOf('奶霜') > -1;
+            // return data.price < 50;
+        })
+
+        // some 若部分符合，回傳true
+        let drink_some = drinks.some(function(data){
+            return data.price > 50;
+        })
+        
+        // every 每一個都符合，回傳true
+        let drink_every = drinks.every(function(data){
+            return data.price > 0;
+        })
+
+        // reduce 
+        let n = [12,356,74];
+        let result = n.reduce(function(x,y){
+            // console.log(x,y);
+            return x + y;
+        })
+
+        // let total = drink_price.reduce(function(x,y){
+        //     return x+y;
+        // })
+        const total = drinks.map(function(data){
+            return data.price
+        }).reduce(function(x,y){
+            return x + y;
+        })
+        console.log(total);
     </script>
 </body>
 </html>
