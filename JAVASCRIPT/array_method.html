@@ -20,22 +20,50 @@
                 id: 3,
                 name: '十盛蕎麥',
                 price: 40
+            },{
+                id: 4,
+                name: '十盛蕎麥奶霜',
+                price: 60
+            },{
+                id: 5,
+                name: '琥珀紅玉奶霜',
+                price: 60
             }
         ]
-        for(let drink of drinks){
-            console.log(drink.name)
-        }
+        // for(let drink of drinks){
+        //     console.log(drink.name)
+        // }
 
-        for(let drink in drinks){
-            console.log(drinks[drink]);
-        }
+        // for(let drink in drinks){
+        //     console.log(drinks[drink]);
+        // }
 
         // forEach 遍歷函數
-        drinks.forEach(function(data,idx){
-            console.log(data.name);
-            console.log(data.price);
-            console.log(idx);
-        });
+        // drinks.forEach(function(data,idx){
+        //     console.log(data.name);
+        //     console.log(data.price);
+        //     console.log(idx);
+        // });
+
+        // map 對應
+        let drink_price = drinks.map(function(data){
+            return data.price;
+        })
+        let drink_name = drinks.map(function(data){
+            return '十盛' + data.name;
+        })
+
+        // filter 篩選
+        let drink_50 = drinks.filter(function(data){
+            return data.price >= 50;
+        })
+        let drink_filter = drinks.filter(function(data){
+            return data.name.indexOf('奶霜') > -1;
+        })
+        let drink_delete = drinks.filter(function(data){
+            return data.name !== '極濃鍋煮';
+        })
+        console.log(drink_delete);
     </script>
 </body>
 </html>
