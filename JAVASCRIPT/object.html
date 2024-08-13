@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = new Object();
+        // user.name = 'John';
+        // user.gender = 'Male';
+        // user.birth = '1999/12/18';
+
+    //     let user = {
+    //         name: 'John',
+    //         gender: 'male',
+    //         birth: '1999/12/18'
+    //     }
+
+        
+    //     console.log(user);
+    //     console.log(user.name);
+    //     console.log(user.birth);
+    //     console.log(user['gender']);
+
+    let users = [
+        {
+            name:'John',
+            gender: 'male',
+        },
+        {
+            name: 'Mary',
+            gender: 'female',
+        },
+        {
+            name: 'henry',
+            gender: 'male'
+        }
+    ]
+    // console.log(users);
+    // console.log(users[1].name);
+    // console.log(users[2].gender);
+
+    for(let user of users){
+        console.log('姓名:',user.name,'性別:',user.gender)
+    }
+    </script>
+</body>
+</html>

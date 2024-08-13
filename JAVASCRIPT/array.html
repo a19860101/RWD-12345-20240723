@@ -35,7 +35,43 @@
         // splice() 拼接
         // a.splice(2,2);
         // a.splice(4,1,'蛋餅');
-        console.log(a);
+        
+        // slice() 切片
+
+        let slice_array = a.slice(1,4);
+
+        // toString() 陣列轉字串
+        let a_string = a.toString();
+        
+        // join() 陣列轉字串
+        let a_join = a.join('');
+        
+        // split() 字串轉陣列
+        let text = 'Hello,Javascript,!!';
+        let split_text = text.split(','); 
+        
+
+        // sort() 排序
+        let text_array = ['HTML','JAVASCRIPT','CSS','PYTHON','VUE','REACT'];
+        // text_array.sort()
+        
+        // reverse() 反轉
+        // text_array.reverse()
+
+        text_array.sort().reverse();
+
+        let t = 'javascript';
+        let answer = t.split('').reverse().join('');
+
+        
+        // concat() 合併
+        // let concat_array = a.concat(text_array);
+        // let concat_array = text_array.concat(a);
+
+        // Spread syntax/Spread operator
+        let concat_array = [...a, ...text_array];
+        console.log(concat_array);
+
     </script>
 </body>
 </html>

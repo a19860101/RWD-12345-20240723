@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let drinks = [
+            {
+                id: 1,
+                name: '極濃鍋煮',
+                price: 69,
+            },{
+                id: 2,
+                name: '伯爵康提',
+                price: 65,
+            },{
+                id: 3,
+                name: '十盛蕎麥',
+                price: 40
+            }
+        ]
+        for(let drink of drinks){
+            console.log(drink.name)
+        }
+
+        for(let drink in drinks){
+            console.log(drinks[drink]);
+        }
+
+        // forEach 遍歷函數
+        drinks.forEach(function(data,idx){
+            console.log(data.name);
+            console.log(data.price);
+            console.log(idx);
+        });
+    </script>
+</body>
+</html>
