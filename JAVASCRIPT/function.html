@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+        // Function Declaration 函式宣告式 => 具有提升性
+        function test(){
+            let x = 10;
+            return x += 10;
+        }
+
+        // Function Expression 函式表達式
+        const foo = function(){
+            let x = 99;
+            return x;
+        }
+
+        const jp_tw = function(dollar, exc){
+            return dollar * exc;
+        }
+
+        // console.log(jp_tw(1000,0.22));
+        const result = jp_tw(1000,0.22);
+        console.log(result);
+
+
+        // 箭頭函示 arrow function
+        
+        // const hello = function(){
+        //     return 'hello';
+        // }
+
+        // const hello = () => {
+        //     return 'hello';
+        // }
+        
+        // 當參數（引數）只有一個時，小括號可省略
+        // const hello = name => {
+        //     return 'hello ' + name + '!!';
+        // }
+
+        // 當動作只有return時，大括號與return皆可省略
+        const hello = name => 'hello ' + name + '!!';
+
+        // const t = x => x;
+
+        // const t = (x,y) => x+y;
+
+        // 當只有return並且為物件時
+        // const product = () => ({
+        //         name: 'iPhone15 Pro',
+        //         color: 'Origin'
+        //     });
+
+        // const p = () => ({});
+        
+
+        const obj = {
+            name: 'TIM',
+            f1:function(){
+                return this.name;
+            },
+            f2:() => {
+                return this;
+            }
+        }
+
+        console.log(obj.f1());
+        console.log(obj.f2());
+        
+    </script>
+</body>
+</html>

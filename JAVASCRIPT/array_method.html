@@ -97,11 +97,14 @@
         // let total = drink_price.reduce(function(x,y){
         //     return x+y;
         // })
-        const total = drinks.map(function(data){
-            return data.price
-        }).reduce(function(x,y){
-            return x + y;
-        })
+
+        // const total = drinks.map(function(data){
+        //     return data.price
+        // }).reduce(function(x,y){
+        //     return x + y;
+        // })
+
+        const total = drinks.map(data => data.price).reduce((x,y) => x+y);
         console.log(total);
     </script>
 </body>

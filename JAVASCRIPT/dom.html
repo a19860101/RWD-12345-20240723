@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            color: #fa0;
+            background-color: #54ddff;
+            padding: 15px;
+        }
+        .item_active {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: deeppink
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">DOM Document Object Model</h1>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis similique ea, quidem officia sapiente optio quisquam facere a, modi repellendus iure quod repudiandae, quaerat dicta cumque esse praesentium placeat eaque?
+    </p>
+    <p class="paragraph">
+        真正學院表示大家都維修有點遠推廣，和平島開了很好好像福建資金參觀孩子，特色食物新聞人口大約通常查詢看過原理女友，應該校園地位效率經濟發展尤其只不過有點遠寶寶填寫這位加強播放，文章自信人氣選手出處評論留在一批立刻她們中文版，斑竹有很多女士，類型我真搭配，公。
+    </p>
+    <ul>
+        <li class="item">test 1</li>
+        <li class="item">test 2</li>
+        <li class="item">test 3</li>
+    </ul>
+    <script>
+        // getElement (HTMLCollection)
+        // let h1 = document.getElementById('title');
+        // let paragraph = document.getElementsByClassName('paragraph');
+        // let ul = document.getElementsByTagName('ul');
+        let li = document.getElementsByTagName('li');
+        // let li0 = document.getElementsByTagName('li')[0];
+        // console.log(li0);
+        // console.log(li[0])
+        // console.log(li[1])
+        // console.log(li[2])
+
+        // QuerySelector
+        let h1 = document.querySelector('h1');
+        let p = document.querySelector('.paragraph');
+        let ul = document.querySelector('ul');
+        // let li = document.querySelector('.item');
+
+        // querySelectorAll (NodeList)
+        // let items = document.querySelectorAll('.item');
+        let items = [...document.querySelectorAll('.item')];
+        let item = document.querySelectorAll('.item')[0];
+
+        h1.style.color = 'red';
+        h1.style.padding = '14px';
+        h1.style.backgroundColor = 'pink';
+
+        p.classList.add('active');
+        p.className = 'active';
+
+        // console.log(items)
+        // for(let i of items){
+        //     // console.log(i)
+        //     i.style.color='red';
+        // }
+        // for(let i of li){
+        //     console.log(i)
+        //     i.classList.add('item_active');
+        // }
+
+
+        // HTMLCollection
+        // li
+        // li = Array.from(li);
+        // li = [...li];
+        // li.forEach(data=>{console.log(data)})
+        // console.log(li)
+
+        // QuerySelector
+        // items
+        // items = Array.from(items);
+        // items = [...items];
+        // const m = items.map(data=>data);
+        // console.log(m)
+    </script>
+
+</body>
+</html>
