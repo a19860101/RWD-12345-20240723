@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2,p {
+            transition: 300ms;
+        }
+        .text-active {
+            color: deeppink;
+            background-color: #ccc;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button onclick="active()">click</button> -->
+    <button class="add">add</button>
+    <button class="remove">remove</button>
+    <button class="toggle">toggle</button>
+    <div>
+        <h2>title</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni laboriosam fugiat at itaque ea debitis commodi tenetur nulla, iste quibusdam nihil assumenda dolorem alias, ducimus molestias voluptatibus. Aperiam, iusto iste.
+        </p>
+    </div>
+    <script>
+        let h2 = document.querySelector('h2');
+        let p = document.querySelector('p');
+        let add = document.querySelector('.add');
+        let remove = document.querySelector('.remove');
+        let toggle = document.querySelector('.toggle');
+
+        const active = function(){
+            h2.style.color = 'red';
+            p.style.color = '#f09'
+        }
+
+        add.onclick = function(){
+            h2.classList.add('text-active');
+            p.classList.add('text-active');
+        }
+        remove.onclick = function(){
+            h2.classList.remove('text-active');
+            p.classList.remove('text-active');
+        }
+        toggle.onclick = function(){
+            h2.classList.toggle('text-active');
+            p.classList.toggle('text-active');
+        }
+
+        // add.onclick = active;
+    </script>
+</body>
+</html>
