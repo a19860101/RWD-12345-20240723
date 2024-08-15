@@ -122,7 +122,9 @@
         let sliderItems = document.querySelectorAll('.slider-item'); 
         let total = sliderItems.length;
         let currentIndex = 0;
-        let timeout = 1000;
+        let timeout = 6000;
+        let next = document.querySelector('.slider-next');
+        let prev = document.querySelector('.slider-prev');
 
         // let [sliderItems,currentIndex,timeout] = [
         //     document.querySelectorAll('.slider-item'),
@@ -134,15 +136,27 @@
         // let [x,y,z] = [100,200,'hello'];
         // console.log(x,y,z)
 
+        next.onclick = () => {
+            slider();
+        }
 
-        function slider(){
+        prev.onclick = () => {
+            slider('prev');
+        }
+
+        function slider(direction){
             // if(currentIndex === total - 1){
             //     currentIndex = 0;
             // }else{
             //     currentIndex++;
             // }
 
-            currentIndex = (currentIndex+1) % total;
+            if(direction === 'prev'){
+                currentIndex = currentIndex === 0 ? total : currentIndex;
+                currentIndex = (currentIndex-1) % total;
+            }else{
+                currentIndex = (currentIndex+1) % total;
+            }
 
             console.log(currentIndex);
 
