@@ -29,13 +29,13 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            /* visibility: hidden; */
+            visibility: hidden;
             opacity: 0;
-            /* transition: 1000ms; */
+            transition: 1000ms;
         }
 
         .slider-item.active {
-            /* visibility: visible; */
+            visibility: visible;
             opacity: 1;
         }
 
@@ -161,8 +161,9 @@
 
             console.log(currentIndex);
 
-            switchImage()
-            switchDot()
+            switchImage();
+            switchDot();
+            resetTimer();
 
         }
 
@@ -184,7 +185,8 @@
         const activeDot = e => {
             currentIndex = e.target.dataset.index;
             switchImage();
-            switchDot()
+            switchDot();
+            resetTimer();
         }
         // 設定dot功能
         let dots = document.querySelectorAll('.slider-dot');
@@ -203,7 +205,6 @@
         //     switchImage();
         //     switchDot()
         // }
-
         
 
         function switchDot(){
@@ -211,7 +212,11 @@
             dots[currentIndex].classList.add('active')
         }
 
-        setInterval(slider,timeout);
+        let timer = setInterval(slider,timeout);
+        function resetTimer(){
+            clearInterval(timer);
+            timer = setInterval(slider,timeout);
+        }
 
         console.log(currentIndex);
     </script>
