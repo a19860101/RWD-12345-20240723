@@ -162,6 +162,7 @@
             console.log(currentIndex);
 
             switchImage()
+            switchDot()
 
         }
 
@@ -177,6 +178,22 @@
             document.querySelector('.slider-dots').append(dot);
             dot.classList.add('slider-dot');
             dot.dataset.index = i;
+        }
+
+        // 設定dot功能
+        let dots = document.querySelectorAll('.slider-dot');
+        dots[0].classList.add('active');
+        for(let dot of dots){
+            dot.onclick = e => {
+                currentIndex = e.target.dataset.index;
+                switchImage();
+                switchDot()
+            }
+        }
+
+        function switchDot(){
+            document.querySelector('.slider-dot.active').classList.remove('active');
+            dots[currentIndex].classList.add('active')
         }
 
         setInterval(slider,timeout);
