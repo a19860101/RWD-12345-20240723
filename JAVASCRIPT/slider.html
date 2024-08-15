@@ -144,6 +144,7 @@
             slider('prev');
         }
 
+        // 循環
         function slider(direction){
             // if(currentIndex === total - 1){
             //     currentIndex = 0;
@@ -164,9 +165,18 @@
 
         }
 
+        // 切換照片
         function switchImage(){
             document.querySelector('.slider-item.active').classList.remove('active');
             sliderItems[currentIndex].classList.add('active');
+        }
+
+        // 建立dot
+        for(let i=0;i<total;i++){
+            let dot = document.createElement('span');
+            document.querySelector('.slider-dots').append(dot);
+            dot.classList.add('slider-dot');
+            dot.dataset.index = i;
         }
 
         setInterval(slider,timeout);
