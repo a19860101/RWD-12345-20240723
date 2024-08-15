@@ -122,7 +122,7 @@
         let sliderItems = document.querySelectorAll('.slider-item'); 
         let total = sliderItems.length;
         let currentIndex = 0;
-        let timeout = 3000;
+        let timeout = 1000;
 
         // let [sliderItems,currentIndex,timeout] = [
         //     document.querySelectorAll('.slider-item'),
@@ -134,7 +134,30 @@
         // let [x,y,z] = [100,200,'hello'];
         // console.log(x,y,z)
 
-        console.log(total)
+
+        function slider(){
+            // if(currentIndex === total - 1){
+            //     currentIndex = 0;
+            // }else{
+            //     currentIndex++;
+            // }
+
+            currentIndex = (currentIndex+1) % total;
+
+            console.log(currentIndex);
+
+            switchImage()
+
+        }
+
+        function switchImage(){
+            document.querySelector('.slider-item.active').classList.remove('active');
+            sliderItems[currentIndex].classList.add('active');
+        }
+
+        setInterval(slider,timeout);
+
+        console.log(currentIndex);
     </script>
 </body>
 
