@@ -179,17 +179,32 @@
             dot.classList.add('slider-dot');
             dot.dataset.index = i;
         }
-
+        
+        // 
+        const activeDot = e => {
+            currentIndex = e.target.dataset.index;
+            switchImage();
+            switchDot()
+        }
         // 設定dot功能
         let dots = document.querySelectorAll('.slider-dot');
         dots[0].classList.add('active');
         for(let dot of dots){
-            dot.onclick = e => {
-                currentIndex = e.target.dataset.index;
-                switchImage();
-                switchDot()
-            }
+            // dot.onclick = e => {
+            //     currentIndex = e.target.dataset.index;
+            //     switchImage();
+            //     switchDot()
+            // }
+            dot.onclick = activeDot;
         }
+
+        // function activeDot(e){
+        //     currentIndex = e.target.dataset.index;
+        //     switchImage();
+        //     switchDot()
+        // }
+
+        
 
         function switchDot(){
             document.querySelector('.slider-dot.active').classList.remove('active');
