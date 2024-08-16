@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .accordion {
+            width: 600px;
+            margin-inline: auto;
+        }
+        dt {
+            padding: 12px;
+            background-color: #ccc;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #999;
+            cursor: pointer;
+        }
+        dd {
+            padding: 12px;
+            background-color: #fffcbe;
+            line-height: 1.7;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <dl>
+            <dt>Question 1</dt>
+            <dd>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error commodi minima totam temporibus a veniam soluta exercitationem beatae hic cumque, culpa repellendus dolor assumenda perferendis praesentium at et, nemo odit.
+                </p>
+            </dd>
+            <dt>Question 2</dt>
+            <dd>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo, neque necessitatibus quia beatae provident quod consequatur. Tempora eveniet doloremque perspiciatis unde quod rem expedita provident sed quia neque. Cum maiores repellat quo ab explicabo unde illo? Sint iure rem temporibus commodi tempora ipsa blanditiis in aperiam? Consequuntur, dolorem quam!
+                </p>
+            </dd>
+            <dt>Question 3</dt>
+            <dd>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laborum in inventore earum doloribus cumque nisi nobis, pariatur dignissimos repellat?
+                </p>
+            </dd>
+        </dl>
+    </div>
+    <!-- <details>
+        <summary>Question 1</summary>
+        <div>
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit libero deserunt vel doloremque placeat dignissimos iusto dolore voluptas molestiae repudiandae? Rem repudiandae repellendus corporis? Eligendi id eius voluptas impedit praesentium?
+            </p>
+        </div>
+    </details>
+    <details>
+        <summary>Question 2</summary>
+        <div>
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit libero deserunt vel doloremque placeat dignissimos iusto dolore voluptas molestiae repudiandae? Rem repudiandae repellendus corporis? Eligendi id eius voluptas impedit praesentium?
+            </p>
+        </div>
+    </details>
+    <details>
+        <summary>Question 3</summary>
+        <div>
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit libero deserunt vel doloremque placeat dignissimos iusto dolore voluptas molestiae repudiandae? Rem repudiandae repellendus corporis? Eligendi id eius voluptas impedit praesentium?
+            </p>
+        </div>
+    </details> -->
+    <script>
+        $(function(){
+            $('dt').click(function(){
+                // $(this).next().toggle(500);
+                // $(this).next().fadeToggle();
+                $(this).next().slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
