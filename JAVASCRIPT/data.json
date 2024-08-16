@@ -1,0 +1,22 @@
+{
+    "title": "json資料測試",
+    "author": "John Doe",
+    "date": "2024/08/16",
+    "datas":[
+        {
+            "id":1,
+            "name":"紅茶",
+            "price": 20
+        },
+        {
+            "id":2,
+            "name":"綠茶",
+            "price": 20
+        },
+        {
+            "id":3,
+            "name":"奶茶",
+            "price": 30
+        }
+    ]
+}
