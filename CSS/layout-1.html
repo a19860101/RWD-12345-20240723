@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 <body>
     <!-- 桌機版選單 -->
@@ -267,5 +269,23 @@
     <footer>
         COPYRIGHTS&copy;All Rights Reserved
     </footer>
+    <script>
+        $(function(){
+            $('.nav-toggle').click(function(){
+                // $('.mobile-nav-menu').fadeIn()
+                $('.mobile-nav-menu').addClass('open')
+            })
+            $('.nav-close').click(function(){
+                // $('.mobile-nav-menu').fadeOut(300);
+                $('.mobile-nav-menu').removeClass('open')
+            })
+            /* 
+                show() hide() toggle()
+                fadeIn() fadeOut() fadeToggle()
+                slideDown() slideUp() slideToggle()
+            */ 
+
+        })
+    </script>
 </body>
 </html>

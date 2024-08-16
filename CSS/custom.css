@@ -69,11 +69,17 @@
         height: 100vh;
         left: 0;
         top: 0;
-        background-color: #000000e3;
+        background-color: #0000001b;
         padding-top: 50%;
         
+        transform: translateX(100%);
+        /* display: none; */
 
-        display: none;
+        transition: 300ms;
+    }
+    .mobile-nav-menu.open {
+        transform: translateX(0);
+        background-color: #000000e3;
     }
     .nav-link {
         color: #fff;
