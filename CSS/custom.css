@@ -53,7 +53,6 @@
     z-index: 9999;
 
     justify-content: space-between;
-
     .nav-logo {
         padding-block: 20px  ;
         text-decoration: none;
@@ -63,6 +62,33 @@
         padding-block: 20px  ;
         text-decoration: none;
         color: var(--clr-light);
+    }
+    .mobile-nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: #000000e3;
+        padding-top: 50%;
+        
+
+        display: none;
+    }
+    .nav-link {
+        color: #fff;
+        font-size: 3rem;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+   
+    .nav-close {
+        position: absolute;
+        z-index: 999;
+        right: 30px;
+        top: 30px;
+        color: #fff;
     }
 }
 .mobile-nav {
