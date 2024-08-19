@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <style>
@@ -23,7 +24,25 @@
             font-weight: bold;
             border-bottom: 2px solid #999;
             cursor: pointer;
+            transition: 300ms;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:hover {
+                background-color: #ffdb57;
+            }
+            i {
+                transition: 300ms;
+            }
+            &.active {
+                background-color: #ffdb57;
+                i {
+                    transform: rotate(180deg);
+                }
+            }
         }
+
         dd {
             padding: 12px;
             background-color: #fffcbe;
@@ -35,19 +54,25 @@
 <body>
     <div class="accordion">
         <dl>
-            <dt>Question 1</dt>
+            <dt>Question 1
+                <i class="fa-solid fa-caret-down fa-lg"></i>
+            </dt>
             <dd>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error commodi minima totam temporibus a veniam soluta exercitationem beatae hic cumque, culpa repellendus dolor assumenda perferendis praesentium at et, nemo odit.
                 </p>
             </dd>
-            <dt>Question 2</dt>
+            <dt>Question 2
+                <i class="fa-solid fa-caret-down fa-lg"></i>
+            </dt>
             <dd>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quo, neque necessitatibus quia beatae provident quod consequatur. Tempora eveniet doloremque perspiciatis unde quod rem expedita provident sed quia neque. Cum maiores repellat quo ab explicabo unde illo? Sint iure rem temporibus commodi tempora ipsa blanditiis in aperiam? Consequuntur, dolorem quam!
                 </p>
             </dd>
-            <dt>Question 3</dt>
+            <dt>Question 3
+                <i class="fa-solid fa-caret-down fa-lg"></i>
+            </dt>
             <dd>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laborum in inventore earum doloribus cumque nisi nobis, pariatur dignissimos repellat?
@@ -88,6 +113,7 @@
                 // $(this).next().toggle(500);
                 // $(this).next().fadeToggle();
                 $(this).next().slideToggle();
+                $(this).toggleClass('active');
             })
         })
     </script>
