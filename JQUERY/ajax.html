@@ -52,6 +52,9 @@
                         // $('.feels').append(data.main.feels_like+'&deg;C');
                         
                         let result = `
+                            <div>
+                                <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
+                            </div>
                             <div class="city_name">城市：${city_name}</div>
                             <div class="desc">現在天氣：${data.weather[0].description}</div>
                             <div class="minmax">最高溫：${data.main.temp_max}&deg;C，最低溫${data.main.temp_min}&deg;C</div>
