@@ -18,7 +18,7 @@
             background-color: #ff4646;
         }
         .slider,.products {
-            width: 1200px;
+            width: min(1200px,90%);
             margin-inline: auto;
         }
         img {
@@ -94,12 +94,47 @@
                 autoplay: true,
                 autoplaySpeed: 1000,
                 arrows: true,
-                dots: true
+                dots: true,
+                centerMode: true,
+                centerPadding: '120px',
+                responsive:[
+                    {
+                        breakpoint: 1200,
+                        settings:{
+                            centerPadding: '60px'
+                        }
+                    },{
+                        breakpoint: 600,
+                        settings:{
+                            centerMode: false,
+                            arrows: false
+                        }
+                    }
+                ]
             });
             $('.products').slick({
-                slidesToShow: 6,
+                slidesToShow: 5,
                 slidesToScroll: 1,
-                dots: true
+                dots: true,
+                centerMode: true,
+                // centerPadding: '60px',
+                responsive:[
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            centerMode: false,
+                            arrows: false
+                        }
+                    },
+      
+                ]
             });
         })
     </script>
