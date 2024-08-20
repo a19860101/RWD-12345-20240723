@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #ff4646;
+        }
+        .slider,.products {
+            width: 1200px;
+            margin-inline: auto;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+        .product-item {
+            padding-inline:10px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="slider">
+            <div class="slider-item">
+                <img src="https://picsum.photos/id/22/1200/600" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://picsum.photos/id/12/1200/600" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://picsum.photos/id/32/1200/600" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://picsum.photos/id/42/1200/600" alt="">
+            </div>
+            <div class="slider-item">
+                <img src="https://picsum.photos/id/52/1200/600" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="products">
+        <div class="product-item">
+            <img src="https://picsum.photos/id/13/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/23/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/33/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/43/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/53/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/63/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/73/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/83/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/93/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/103/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/113/400" alt="">
+        </div>
+        <div class="product-item">
+            <img src="https://picsum.photos/id/123/400" alt="">
+        </div>
+    </section>
+    <script>
+        $(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: true,
+                dots: true
+            });
+            $('.products').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                dots: true
+            });
+        })
+    </script>
+</body>
+</html>
