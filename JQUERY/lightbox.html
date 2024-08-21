@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <style>
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://picsum.photos/id/99/1024/768" data-lightbox="a" data-title="馬車">
+        <img src="https://picsum.photos/id/99/1024/768" alt="">
+    </a>
+    <a href="https://picsum.photos/id/29/1024/768" data-lightbox="a">
+        <img src="https://picsum.photos/id/29/1024/768" alt="">
+    </a>
+    <a href="https://picsum.photos/id/69/1024/768" data-lightbox="a">
+        <img src="https://picsum.photos/id/69/1024/768" alt="">
+    </a>
+    <a href="https://picsum.photos/id/91/1024/768" data-lightbox="a2">
+        <img src="https://picsum.photos/id/91/1024/768" alt="">
+    </a>
+    <a href="https://picsum.photos/id/92/1024/768" data-lightbox="a2">
+        <img src="https://picsum.photos/id/92/1024/768" alt="">
+    </a>
+    <a href="https://picsum.photos/id/93/1024/768" data-lightbox="a2">
+        <img src="https://picsum.photos/id/93/1024/768" alt="">
+    </a>
+    
+    <script>
+        lightbox.option({
+            fadeDuration:400,
+            imageFadeDuration:400,
+            resizeDuration:400,
+            // albumLabel: '%1/%2'
+            albumLabel: '第%1張，共%2張',
+            positionFromTop:50
+        })
+    </script>
+</body>
+</html>
