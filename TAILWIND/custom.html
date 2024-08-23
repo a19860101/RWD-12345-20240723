@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        .btn {
+            @apply px-[30px] py-[6px] bg-zinc-400 rounded-xl inline-block hover:bg-lime-400 duration-300
+        }
+        .btn-amber {
+            @apply bg-amber-400 ;
+        }
+        .btn-rose {
+            @apply bg-rose-400 ;
+        }
+        .my-container {
+            @apply container flex flex-wrap mx-auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-[150px]">HELLO TAILWIND</h1>
+    <div class="w-[100px] aspect-[4/3] bg-[#098]"></div>
+    <a href="#" class="px-[30px] py-[6px] bg-amber-400 rounded-xl inline-block hover:bg-lime-400 duration-300">link</a>
+    <a href="#" class="btn">link</a>
+    <a href="#" class="btn btn-amber">link</a>
+    <a href="#" class="btn btn-rose">link</a>
+    <a href="#" class="btn">link</a>
+    <div class="my-container">
+        <div class="w-1/3">
+            <h2>text</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aperiam error tenetur deleniti natus necessitatibus odit a doloribus ratione aliquam?
+            </p>
+        </div>
+        <div class="w-1/3">
+            <h2>text</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aperiam error tenetur deleniti natus necessitatibus odit a doloribus ratione aliquam?
+            </p>
+        </div>
+        <div class="w-1/3">
+            <h2>text</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aperiam error tenetur deleniti natus necessitatibus odit a doloribus ratione aliquam?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

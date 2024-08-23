@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true
+                },
+                // colors:{
+                //     'primary':'#098',
+                //     'secondary':'#aaa',
+                //     'pink':{
+                //         '100':'#fa0',
+                //         '200':'#0af',
+                //     }
+                // },
+                extend: {
+                    colors:{
+                        'primary':'#098',
+                        'secondary':'#aaa',
+                        'pink':{
+                            '100':'#fa0',
+                            '200':'#0af',
+                        },
+                    },
+                    aspectRatio:{
+                        'tv':'4 / 3',
+                        'movie': '21 / 9'
+                    },
+                    spacing: {
+                        '100': '100px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="w-100 h-100 bg-teal-400"></div>
+    <div class="flex">
+        <div class="p-12 aspect-video bg-rose-400"></div>
+        <div class="p-12 aspect-movie bg-amber-400"></div>
+        <div class="p-12 aspect-tv bg-indigo-400"></div>
+        <div class="p-12 bg-lime-400"></div>
+        <div class="p-12 bg-orange-400"></div>
+        <div class="p-12 bg-teal-400"></div>
+        <div class="p-12 bg-emerald-400"></div>
+        <div class="p-12 bg-primary"></div>
+        <div class="p-12 bg-secondary"></div>
+        <div class="p-12 bg-pink-100"></div>
+        <div class="p-12 bg-pink-200"></div>
+    </div>
+    <div class="container flex flex-wrap bg-amber-200">
+        <div class="w-1/4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, maxime.
+            </p>
+        </div>
+        <div class="w-1/4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, maxime.
+            </p>
+        </div>
+        <div class="w-1/4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, maxime.
+            </p>
+        </div>
+        <div class="w-1/4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, maxime.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
