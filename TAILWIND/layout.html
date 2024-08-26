@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&family=Holtwood+One+SC&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true
+                },
+                fontFamily: {
+                    'serif': ['EB Garamond','Noto Serif TC'],
+                    'display': ['Holtwood One SC']
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .btn {
+            @apply inline-block px-6 py-2 rounded-lg;
+        }
+        .btn-teal {
+            @apply bg-teal-400
+        }
+        .cover {
+            @apply w-full h-full block object-cover
+        }
+    </style>
+</head>
+<body class="font-serif">
+    <nav class="bg-zinc-800/80 text-zinc-100 flex px-4 py-5">
+        <a href="#">Logo</a>
+        <div class="ml-auto space-x-4 hover:*:text-teal-400 *:duration-300">
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Folio</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <header class="py-28 bg-teal-100">
+        <div class="container flex items-center">
+            <div class="w-1/2 p-4">
+                <h1 class="font-display text-6xl mb-6">HELLO<br>TAILWIND</h1>
+                <p class="text-xl mb-7">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius eum voluptates hic nobis similique laborum ipsum reprehenderit quasi voluptatibus consequuntur!
+                </p>
+                <a href="#" class="btn btn-teal">Read</a>
+            </div>
+            <div class="w-1/2">
+                <img src="https://picsum.photos/id/40/800" alt="" class="w-full block">
+            </div>
+        </div>
+    </header>
+    <section class="py-20 bg-teal-50">
+        <div class="container flex flex-wrap">
+            <div class="w-1/3 flex items-center px-4">
+                <div class="rounded-full overflow-hidden">
+                    <img src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="pl-4">
+                    <h3 class="text-lg font-bold uppercase">title</h3>
+                    <p class="leading-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus doloribus magni.
+                    </p>
+                </div>
+            </div>
+            <div class="w-1/3 flex items-center px-4">
+                <div class="rounded-full overflow-hidden">
+                    <img src="https://picsum.photos/200?random=1" alt="">
+                </div>
+                <div class="pl-4">
+                    <h3 class="text-lg font-bold uppercase">title</h3>
+                    <p class="leading-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus doloribus magni.
+                    </p>
+                </div>
+            </div>
+            <div class="w-1/3 flex items-center px-4">
+                <div class="rounded-full overflow-hidden">
+                    <img src="https://picsum.photos/200?random=2" alt="">
+                </div>
+                <div class="pl-4">
+                    <h3 class="text-lg font-bold uppercase">title</h3>
+                    <p class="leading-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus doloribus magni.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-teal-100">
+        <div class="container flex flex-wrap">
+            <div class="w-1/4 p-4">
+                <div class="rounded-lg overflow-hidden bg-teal-50 border border-teal-600 hover:shadow-xl duration-300">
+                    <div class="aspect-[4/3]">
+                        <img src="https://picsum.photos/id/34/800/600" alt="" class="cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-3xl mb-3">title</h3>
+                        <p class="mb-4 leading-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?
+                        </p>
+                        <a href="#" class="btn btn-teal">link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 p-4">
+                <div class="rounded-lg overflow-hidden bg-teal-50 border border-teal-600 hover:shadow-xl duration-300">
+                    <div class="aspect-[4/3]">
+                        <img src="https://picsum.photos/id/34/800/600" alt="" class="cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-3xl mb-3">title</h3>
+                        <p class="mb-4 leading-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?
+                        </p>
+                        <a href="#" class="btn btn-teal">link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 p-4">
+                <div class="rounded-lg overflow-hidden bg-teal-50 border border-teal-600 hover:shadow-xl duration-300">
+                    <div class="aspect-[4/3]">
+                        <img src="https://picsum.photos/id/34/800/600" alt="" class="cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-3xl mb-3">title</h3>
+                        <p class="mb-4 leading-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?
+                        </p>
+                        <a href="#" class="btn btn-teal">link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 p-4">
+                <div class="rounded-lg overflow-hidden bg-teal-50 border border-teal-600 hover:shadow-xl duration-300">
+                    <div class="aspect-[4/3]">
+                        <img src="https://picsum.photos/id/34/800/600" alt="" class="cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-3xl mb-3">title</h3>
+                        <p class="mb-4 leading-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?
+                        </p>
+                        <a href="#" class="btn btn-teal">link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 p-4">
+                <div class="rounded-lg overflow-hidden bg-teal-50 border border-teal-600 hover:shadow-xl duration-300">
+                    <div class="aspect-[4/3]">
+                        <img src="https://picsum.photos/id/34/800/600" alt="" class="cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-3xl mb-3">title</h3>
+                        <p class="mb-4 leading-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?
+                        </p>
+                        <a href="#" class="btn btn-teal">link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 p-4">
+                <div class="rounded-lg overflow-hidden bg-teal-50 border border-teal-600 hover:shadow-xl duration-300">
+                    <div class="aspect-[4/3]">
+                        <img src="https://picsum.photos/id/34/800/600" alt="" class="cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-3xl mb-3">title</h3>
+                        <p class="mb-4 leading-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?
+                        </p>
+                        <a href="#" class="btn btn-teal">link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 p-4">
+                <div class="rounded-lg overflow-hidden bg-teal-50 border border-teal-600 hover:shadow-xl duration-300">
+                    <div class="aspect-[4/3]">
+                        <img src="https://picsum.photos/id/34/800/600" alt="" class="cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-3xl mb-3">title</h3>
+                        <p class="mb-4 leading-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?
+                        </p>
+                        <a href="#" class="btn btn-teal">link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 p-4">
+                <div class="rounded-lg overflow-hidden bg-teal-50 border border-teal-600 hover:shadow-xl duration-300">
+                    <div class="aspect-[4/3]">
+                        <img src="https://picsum.photos/id/34/800/600" alt="" class="cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-3xl mb-3">title</h3>
+                        <p class="mb-4 leading-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, reiciendis?
+                        </p>
+                        <a href="#" class="btn btn-teal">link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-teal-50">
+        <div class="container flex flex-wrap items-center">
+            <div class="w-7/12 p-4">
+                <div class="rounded-lg overflow-hidden">
+                    <img src="https://picsum.photos/id/22/800" alt="" class="cover">
+                </div>
+            </div>
+            <div class="w-5/12 p-4 space-y-4">
+                <h3 class="text-3xl font-bold">title</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum maiores autem temporibus minus adipisci!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum maiores autem temporibus minus adipisci!
+                </p>
+                <a href="#" class="btn btn-teal">Read</a>
+            </div>
+            <div class="w-7/12 p-4 order-2">
+                <div class="rounded-lg overflow-hidden">
+                    <img src="https://picsum.photos/id/52/800" alt="" class="cover">
+                </div>
+            </div>
+            <div class="w-5/12 p-4 space-y-4 order-1">
+                <h3 class="text-3xl font-bold">title</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum maiores autem temporibus minus adipisci!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum maiores autem temporibus minus adipisci!
+                </p>
+                <a href="#" class="btn btn-teal">Read</a>
+            </div>
+            <div class="w-7/12 p-4 order-3">
+                <div class="rounded-lg overflow-hidden">
+                    <img src="https://picsum.photos/id/43/800" alt="" class="cover">
+                </div>
+            </div>
+            <div class="w-5/12 p-4 space-y-4 order-4">
+                <h3 class="text-3xl font-bold">title</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum maiores autem temporibus minus adipisci!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum maiores autem temporibus minus adipisci!
+                </p>
+                <a href="#" class="btn btn-teal">Read</a>
+            </div>
+            <div class="w-7/12 p-4 order-6">
+                <div class="rounded-lg overflow-hidden">
+                    <img src="https://picsum.photos/id/21/800" alt="" class="cover">
+                </div>
+            </div>
+            <div class="w-5/12 p-4 space-y-4 order-5">
+                <h3 class="text-3xl font-bold">title</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum maiores autem temporibus minus adipisci!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum maiores autem temporibus minus adipisci!
+                </p>
+                <a href="#" class="btn btn-teal">Read</a>
+            </div>
+
+        </div>
+    </section>
+    <footer class="pt-20 bg-teal-100">
+        <div class="container flex flex-wrap">
+            <div class="w-1/4">
+                <h3 class="mb-3 text-xl font-bold text-teal-800">Getting Started</h3>
+                <ul class="text-zinc-700">
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                </ul>
+            </div>
+            <div class="w-1/4">
+                <h3 class="mb-3 text-xl font-bold text-teal-800">Core Concepts</h3>
+                <ul class="text-zinc-700">
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                </ul>
+            </div>
+            <div class="w-1/4">
+                <h3 class="mb-3 text-xl font-bold text-teal-800">Customization </h3>
+                <ul class="text-zinc-700">
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                </ul>
+            </div>
+            <div class="w-1/4">
+                <h3 class="mb-3 text-xl font-bold text-teal-800">Community</h3>
+                <ul class="text-zinc-700">
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">List</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-teal-900 py-4 mt-12 text-center text-teal-100">
+            Copyrights&copy;All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>
