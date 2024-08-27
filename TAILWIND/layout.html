@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&family=Holtwood+One+SC&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
     <script>
         tailwind.config = {
             theme: {
@@ -40,7 +41,7 @@
 <body class="font-serif">
     <nav class="bg-zinc-800/80 text-zinc-100 flex px-4 py-5 fixed w-full z-50 backdrop-blur">
         <a href="#">Logo</a>
-        <a href="#" class="ml-auto sm:hidden"><i class="fa-solid fa-bars fa-lg"></i></a>
+        <a href="#" class="ml-auto sm:hidden toggle-btn"><i class="fa-solid fa-bars fa-lg"></i></a>
         <div class="ml-auto space-x-4 hover:*:text-teal-400 *:duration-300 sm:block hidden">
             <a href="#">About</a>
             <a href="#">Service</a>
@@ -48,7 +49,7 @@
             <a href="#">Contact</a>
         </div>
     </nav>
-    <nav class="w-full h-screen bg-zinc-800/80 fixed z-50 backdrop-blur text-zinc-100 text-center flex flex-col justify-center space-y-4 hidden">
+    <nav class="mobile-nav w-full h-screen bg-zinc-800/80 fixed z-50 backdrop-blur text-zinc-100 text-center flex flex-col justify-center space-y-4 hidden">
         <a href="#" class="text-5xl font-bold">Logo</a>
         <div class="flex flex-col space-y-4 *:text-3xl">
             <a href="#">About</a>
@@ -56,7 +57,7 @@
             <a href="#">Folio</a>
             <a href="#">Contact</a>
         </div>
-        <a href="#" class="absolute top-10 right-10"><i class="fa-solid fa-xmark fa-2xl"></i></a>
+        <a href="#" class="absolute top-10 right-10 nav-close"><i class="fa-solid fa-xmark fa-2xl"></i></a>
     </nav>
     <header class="pb-28 sm:pt-36 pt-0 bg-teal-100">
         <div class="container flex flex-wrap items-center">
@@ -334,5 +335,15 @@
             Copyrights&copy;All Rights Reserved
         </div>
     </footer>
+    <script>
+        $(function(){
+            $('.toggle-btn').click(function(){
+                $('.mobile-nav').removeClass('hidden').addClass('block');
+            })
+            $('.nav-close').click(function(){
+                $('.mobile-nav').removeClass('block').addClass('hidden');
+            })
+        })
+    </script>
 </body>
 </html>
